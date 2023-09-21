@@ -1,0 +1,16 @@
+{
+    "name": "testTaskChromeExtension",
+    "version": "1.0",
+    "description": "Test Task Chrome Extension",
+    "manifest_version": 2,
+	 "content_scripts": [
+			{
+			  "matches": ["https://www.ligastavok.ru/bets/live"],
+			  "js": ["ligastavok.js"]
+			},
+			{
+			  "matches": ["https://www.marathonbet.com/en/live/popular"],
+			  "js": ["marathonbet.js"]
+			}
+       ]
+  }
